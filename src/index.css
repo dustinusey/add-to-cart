@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.overlay-ani {
+    animation: overlay .5s ease forwards;
+}
+
+.cart-ani {
+    animation: cart .2s .5s ease forwards;
+}
+
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cart {
+    0% {
+        opacity: 0;
+        right: -400px;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
